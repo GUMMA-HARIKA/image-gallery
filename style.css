@@ -37,8 +37,12 @@ body{
    display: block;
  }
  .error{
+    font-size: 1rem;
+    font-weight: bold;
     color: red;
  }
  .success{
+    font-size: 1rem;
+    font-weight: bold;
     color:green
  }
