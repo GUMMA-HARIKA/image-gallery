@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+   
+    <div class="full__picture">
+       <img src="" class="full__img"> 
+       <span class="close"  onclick="closeFullImage()">x</span>
+    </div>
+    <div class="img-gallery">
+        <img src="./img/angular.svg" onclick="fullImage(this.src)"  >
+        <img src="./img/aurelia.svg" onclick="fullImage(this.src)" >
+        <img src="./img/react.svg" onclick="fullImage(this.src)" >
+        <img src="./img/js-badge.svg" onclick="fullImage(this.src)" >
+        <img src="./img/vue.svg" onclick="fullImage(this.src)" >
+        <img src="./img/backbone.svg" onclick="fullImage(this.src)" >
+    </div>
+
+<script>
+const img=document.querySelector('.full__img');
+const frame=document.querySelector('.full__picture')
+function fullImage(path) {
+
+    console.log(path);
+    img.src=path;
+    frame.style.display='flex';
+    console.log(img)
+}
+function closeFullImage() {
+    frame.style.display='none';
+}
+
+</script>
+</body>
+</html>
