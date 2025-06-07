@@ -77,8 +77,9 @@ if(!savedinput){
 if(savedinput.username===enteredName&&savedinput.password===enteredPass){
     window.location.assign('gallery.html')
 }
+else{
 msg.textContent='invalid username and password'
 msg.classList.add('error');
-
+}
 return;
 }
